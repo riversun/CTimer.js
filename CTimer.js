@@ -35,6 +35,10 @@
  *
  * @author Tom Misawa (riversun.org@gmail.com)
  */
+
+
+
+
 var CTimer =
     (function () {
         function CTimer() {
@@ -62,16 +66,19 @@ var CTimer =
         CTimer.prototype.setCallback = function (callback_func) {
             var me = this;
             me._timerMethod = callback_func;
+            return me;
         };
 
         CTimer.prototype.setIntervalMillis = function (interval) {
             var me = this;
             me._timerInterval = interval;
+            return me;
         };
 
         CTimer.prototype.stopTimer = function () {
             var me = this;
             me._isRunning = false;
+            return me;
         };
 
         CTimer.prototype.startTimer = function () {
@@ -79,7 +86,9 @@ var CTimer =
             if (me._timerInterval > 0) {
                 me._timerId = setTimeout(me._internalCallback, me._timerInterval);
                 me._isRunning = true;
+
             }
+            return me;
         };
 
 
