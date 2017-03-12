@@ -27,7 +27,7 @@ timer.startTimer();
 
 # Example 2
 Example on HTML.
-[demo](https://riversun.github.io/ctimer/example1.html)
+<a href="https://riversun.github.io/ctimer/example1.html" target="_blank">open DEMO</a>
 
 ```html
 <!DOCTYPE html>
